@@ -113,8 +113,8 @@ const panorama = (imglist)=>{
 	var virtualTour = viewer.getPlugin(PhotoSphereViewer.VirtualTourPlugin);
 	//time to create nodes 
 	const nodes = [
-  { id: 'node-1', panorama: imglist[0], links: [{ nodeId: 'node-2', x: 1500, y: 780}] },
-  { id: 'node-2', panorama: imglist[1], links: [{ nodeId: 'node-1', x: 3000, y: 780}] },
+  { id: 'node-1', panorama: imglist[0], links: [{ nodeId: 'node-2'}],x: 1500, y: 780 },
+  { id: 'node-2', panorama: imglist[1], links: [{ nodeId: 'node-1'}], x: 3000, y: 780 },
 ];
 	virtualTour.setNodes(nodes) // this is where all the panoroma checkpoints are created 
 }
