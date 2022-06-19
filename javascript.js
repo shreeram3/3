@@ -117,7 +117,7 @@ const panorama = (imglist)=>{
   { id: 'node-2', panorama: imglist[1], links: [{ nodeId: 'node-1', x: 3000, y: 780}] },
 ];
 	virtualTour.setNodes(nodes) // this is where all the panoroma checkpoints are created 
-
+}
 
 
 // id      : '1',
